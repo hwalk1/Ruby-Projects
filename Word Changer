@@ -1,0 +1,12 @@
+print "What do you want to say?"
+user_input = gets.chomp
+user_input.downcase!
+
+if user_input.include? "s"
+  user_input.gsub!(/s/, "th")
+else 
+  print "There are no S's here, mate'"
+
+end
+
+puts "#{user_input}!"
